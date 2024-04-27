@@ -12,6 +12,8 @@ def dividir(a, b):
         return "No se puede dividir por cero"
     else:
         return a / b
+    
+
 
 print("Selecciona una opción:")
 
@@ -26,20 +28,27 @@ print("4. Dividir")
 while True:
     try:
        
-        n1 = float(input("Ingresa el primer número: "))
-        n2 = float(input("Ingresa el segundo número: "))
+        opcion = int(input("Elige una opcion: "))
+        
         break
     except ValueError:
         print("Error: debes ingresar un número.")
 
-opcion = int(input("Ingresa un número: "))
 if opcion == 1:
+    n1 = float(input("Ingresa el primer número: "))
+    n2 = float(input("Ingresa el segundo número: "))
     resultado = sumar(n1, n2)
 elif opcion == 2:
+    n1 = float(input("Ingresa el primer número: "))
+    n2 = float(input("Ingresa el segundo número: "))
     resultado = restar(n1, n2)
 elif opcion == 3:
+    n1 = float(input("Ingresa el primer número: "))
+    n2 = float(input("Ingresa el segundo número: "))
     resultado = multiplicar(n1, n2)
 elif opcion == 4:
+    n1 = float(input("Ingresa el primer número: "))
+    n2 = float(input("Ingresa el segundo número: "))
     resultado = dividir(n1, n2)
 else:
     resultado = 'opción invalida'
